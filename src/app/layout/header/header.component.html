@@ -1,0 +1,94 @@
+<!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	<a class="navbar-brand" href="#">Navbar</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav"> 
+			<li class="nav-item" [routerLinkActive]="['active']">
+				<a class="nav-link" [routerLink]="['home']" href="#">Home</a>
+			</li>
+			<li class="nav-item" [routerLinkActive]="['active']">
+				<a class="nav-link" [routerLink]="['about-us']" href="#">About Us</a>
+			</li>
+		</ul>
+	</div>
+</nav> -->
+
+
+<!-- <p>Simple datepicker</p>
+
+<ngb-datepicker #dp [(ngModel)]="model" (navigate)="date = $event.next"></ngb-datepicker>
+
+<hr/>
+
+<button class="btn btn-sm btn-outline-primary mr-2" (click)="selectToday()">Select Today</button>
+<button class="btn btn-sm btn-outline-primary mr-2" (click)="dp.navigateTo()">To current month</button>
+<button class="btn btn-sm btn-outline-primary mr-2" (click)="dp.navigateTo({year: 2013, month: 2})">To Feb 2013</button>
+
+<hr/>
+
+<pre>Month: {{ date.month }}.{{ date.year }}</pre>
+<pre>Model: {{ model | json }}</pre> -->
+
+<!-- <form class="form-inline">
+  <div class="form-group">
+    <div class="input-group">
+      <input class="form-control" placeholder="yyyy-mm-dd"
+             name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"></button>
+      </div>
+    </div>
+  </div>
+</form>
+
+<hr/>
+<pre>Model: {{ model | json }}</pre> -->
+
+<nav class="navbar navbar-light" style="
+background-color: rgb(238, 234, 234)">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/">Header</a>
+
+    <!-- Show this for logged out users -->
+    <ul 
+      class="nav navbar-nav pull-xs-right">
+			<li class="nav-item">
+        <a class="nav-link"
+          routerLink="/dragndrop"
+          routerLinkActive="active">
+          Drag Drop
+        </a>
+			</li>
+			
+      <li class="nav-item">
+        <a class="nav-link"
+          routerLink="/">
+          Home
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link"
+          routerLink="/login"
+          routerLinkActive="active">
+          Sign in
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link"
+          routerLink="/register"
+          routerLinkActive="active">
+          Sign up
+        </a>
+      </li>
+
+    </ul>
+
+    <!-- Show this for logged in users -->
+    
+
+  </div>
+</nav>

@@ -1,0 +1,27 @@
+<h2>Drag and Drop demo</h2>
+<div  id="div1" (drop)="drop($event)" (dragover)="allowDrop($event)"> 
+      
+
+      <div class="mt-2 mb-1"  draggable="true" (dragstart)="drag($event)" id="drag1">Drag Me one</div>
+      <div class="mt-2 mb-1" draggable="true" (dragstart)="drag($event)" id="drag2">Drag Me two</div>
+      <div class="mt-2 mb-1" draggable="true" (dragstart)="drag($event)" id="drag3">Drag Me three</div>
+      <div class="mt-2 mb-1" draggable="true" (dragstart)="drag($event)" id="drag4">Drag Me four</div>      
+</div>
+
+<div id="div2" (drop)="drop($event)" (dragover)="allowDrop($event)">
+      <div draggable="true" class="mt-2 mb-1" (dragstart)="drag($event)" id="drag5">Drag Me 1</div>
+      <div draggable="true" class="mt-2 mb-1" (dragstart)="drag($event)" id="drag6">Drag Me 2</div>
+</div> 
+
+<!-- <div class="row">
+<div class="example-list md-4" (drop)="drop($event)" (dragover)="allowDrop($event)">
+  <div class="example-box" *ngFor="let movie of movies; let i = index" id="drag{{i}}"  draggable="true" (dragstart)="drag($event)"  >{{movie}}</div>
+</div> 
+
+<div class="example-list md-6" (drop)="drop($event)" (dragover)="allowDrop($event)">
+  <div class="example-box" *ngFor="let drama of dramas; let i = index" id="drag{{i}}" draggable="true" (dragstart)="drag($event)" >{{drama}}</div>
+</div>
+</div> -->
+
+
+
